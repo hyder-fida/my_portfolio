@@ -25,8 +25,12 @@ const Hero = () => {
   };
 
   const downloadResume = () => {
-    // Open resume in new tab
-    window.open("https://drive.google.com/file/d/14uzM0YOSB8AczwYnNYcJ--bZWJSP3LBl/view?usp=sharing", "_blank");
+    const link = document.createElement("a");
+    link.href = "https://drive.google.com/file/d/1BRe7Fse156s7nVbCWhvR5GGqJaakGFtF/view?usp=drive_link";
+    link.download = "Fida_Hussain_Mir_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const socialLinks = [
@@ -111,8 +115,10 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-lg sm:text-xl text-white/80 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Specialized in crafting high-performance web applications using React, Node.js, and modern technologies. 
-              Delivered 20+ successful projects with 98% client satisfaction rate, transforming complex business challenges into intuitive digital solutions.
+              Passionate about creating beautiful, responsive web applications with modern
+              technologies. I turn complex problems into simple, elegant solutions. Based in
+              Kashmir (Srinagar & Budgam), J&K, I specialize as a Full Stack Developer and React.js/Next.js
+              Frontend Developer building high-performance products for clients across India.
             </p>
 
             {/* Contact Info */}
@@ -186,15 +192,11 @@ const Hero = () => {
               
               {/* Profile image container */}
               <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-white/20 shadow-2xl transform hover:scale-105 transition-all duration-500">
-               <div className="relative aspect-square w-80 sm:w-96 lg:w-[450px] rounded-full overflow-hidden border-4 border-white/20 shadow-2xl transform hover:scale-105 transition-all duration-500">
-                  <img
-                      src="/dp2.png"
-                      alt="Fida Hussain Mir"
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-
-                
+                <img
+                  src="/IMG_9846.jpg"
+                  alt="Fida Hussain Mir"
+                  className="w-full h-full object-cover object-top"
+                />
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
               </div>
