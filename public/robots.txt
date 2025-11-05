@@ -1,0 +1,14 @@
+# robots.txt for Fida Hussain Mir Portfolio
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://fidahussainmir.netlify.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
